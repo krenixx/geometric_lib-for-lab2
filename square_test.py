@@ -8,11 +8,17 @@ class SquareTestCase(unittest.TestCase):
     def test_area_positive(self):
         self.assertEqual(area(5), 25)
 
+    def test_area_fractional(self):
+        self.assertAlmostEqual(area(2.5), 6.25)
+
     def test_area_negative(self):
         self.assertEqual(area(-3), 'error')
 
     def test_perimeter_zero(self):
         self.assertEqual(perimeter(0), 0)
+
+    def test_perimeter_fractional(self):
+        self.assertAlmostEqual(perimeter(1.5), 6.0)
 
     def test_perimeter_positive(self):
         self.assertEqual(perimeter(4), 16)
