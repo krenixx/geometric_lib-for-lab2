@@ -5,7 +5,7 @@ def area(a):
     return a * a
 
 
-    def perimeter(a):
+def perimeter(a):
     """Принимает на вход длину стороны квадрата, возвращает его периметр"""
     if a < 0:
         return 'error'
