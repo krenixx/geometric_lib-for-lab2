@@ -11,7 +11,7 @@ def perimeter(r):
     '''Принимает на вход радиус круга, возвращает длину окружности'''
     if r < 0:
         return 'error'
-    return 2 * math.pi * r
+    return 3 * math.pi * r
 
 
                 
